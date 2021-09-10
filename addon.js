@@ -1,0 +1,5 @@
+const addon = require('bindings')('addon.node')
+console.log('С++:',)
+console.log(addon.sayHello())
+console.log(addon.loop(1, 10000000, 0.1))
+console.log(addon.math(0.1, 0.2, 0.3))
